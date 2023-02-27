@@ -25,7 +25,11 @@ def File_search(dir):
             name, ext = os.path.splitext(filename)
             print('name',name, '              ext ::::', ext)
 
-            print(name.find("-"))
+            old_idx = name.find("-")
+
+            new_file_name = name[:old_idx]+"*"+name[old_idx+1:]
+
+            print(new_file_name)
 
 
 
