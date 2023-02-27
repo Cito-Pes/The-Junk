@@ -6,7 +6,7 @@ import os, glob
 
 
 import os
-new_folder = "d:/현대투어존동의자료_모음/"
+new_folder = "z:new_folder"
 
 import shutil
 
