@@ -25,9 +25,10 @@ def File_search(dir):
             name, ext = os.path.splitext(filename)
             print('name',name, '              ext ::::', ext)
 
-            old_idx = name.find("-")
+            old_idx = name.find("-",0,5) #0~5글자중에 - 가 몇번째에 있는지 확인
+            new_str = "*"
 
-            new_file_name = name[:old_idx]+"*"+name[old_idx+1:]
+            new_file_name = name[:old_idx]+new_str+name[old_idx+1:]
 
             print(new_file_name)
 
